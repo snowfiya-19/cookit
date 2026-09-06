@@ -1,0 +1,25 @@
+.sc-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sc-container img {
+    width: 200px;
+    margin: 2rem 0;
+}
+
+button {
+    background-color: red;
+    max-width: 600px;
+    text-align: center;
+    font-size: 0.97rem;
+}
+
+.sc-container h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}

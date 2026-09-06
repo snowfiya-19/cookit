@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Local StyleSheet Link-->
+    <link rel="stylesheet" href="style.css">
+    <!--BoxIcons StyleSheet Link-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Owl Carousel StyleSheet Links-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!--AOS StyleSheet Link-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--Light Gallery StyleSheet Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>COOKIT</title>
+</head>
+
+<body>
+    <header>
+        <!--PreNav Text Start-->
+        <div id="prenav-text">
+            <div class="flex-row">
+                <div class="contact-info">Phone No:<span>+91 4573872109</span> Or Email Us:<span>cookit@gmail.com</span>
+                </div>
+                <div class="opening-times flex-row">
+                    Mon - Fri / 9:00-21:00. Sat - Sun / 10:00-23:00
+                    <ul class="social-links flex-row">
+                        <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-twitter"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-instagram"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="bx bxl-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--PreNav Text End-->
+        <!--Navbar Start-->
+        <nav id="navbar" class="navbar flex-row">
+            <div class="nav-icon menu-btn-wrapper">
+                <i id="menu-btn" class="menu-btn bx bx-menu"></i>
+            </div>
+            <div class="logo">
+                <h5>COOK<span>IT</span></h5>
+            </div>
+            <ul id="nav-items" class="nav-items">
+                <li><a href="#home" class="nav-links">HOME</a></li>
+                <li><a href="#about" class="nav-links">ABOUT</a></li>
+                <li><a href="#recipes" class="nav-links">RECIPES</a></li>
+                <li><a href="#gallery" class="nav-links">GALLERY</a></li>
+                <li><a href="#blogs" class="nav-links">BLOG</a></li>
+                <li><a href="#footer" class="nav-links">CONTACT</a></li>
+            </ul>
+            <ul class="nav-btns">
+                <div class="search-btn-wrapper nav-icon">
+                    <i class="searchbtn bx bx-search-alt-2"></i>
+                    <div id="search-form" class="search-form">
+                        <form action="#">
+                            <input type="search" class="search-data" placeholder="Search" required>
+                            <button type="submit" class="bx bx-search-alt-2"></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="cart-btn-wrapper nav-icon">
+                    <i class="cartbtn bx bx-cart" id="cart-icon"></i>
+                    <!--Cart-->
+                    <div class="cart">
+                        <h2 class="cart-title">YOUR CART</h2>
+                        <!--Content-->
+                        <div class="cart-content">
+                            <div class="cart-box">
+                                <img src="Img/chickpea-quinoa-salad.jpg" alt="" class="cart-img">
+                                <div class="detail-box">
+                                    <div class="cart-product-title">Quinoa Salad</div>
+                                    <div class="cart-price">RS350</div>
+                                    <input type="number" value="1" class="cart-quantity">
+                                </div>
+                                <!--Remove Cart-->
+                                <i class='bx bxs-trash-alt cart-remove'></i>
+                            </div>
+                        </div>
+                        <!--Total-->
+                        <div class="total">
+                            <div class="total-title">TOTAL</div>
+                            <div class="total-price">$0</div>
+                        </div>
+                        <!--Buy Button-->
+                        <a href="https://thriving-starburst-15f5ac.netlify.app/" target="_blank">
+                            <button type="button" class="btn-buy">Buy Ingredients</button>
+                        </a>
+
+                        <!--Cart Close-->
+                        <i class='bx bxs-exit' id="close-cart"></i>
+                    </div>
+                </div>
+                <div class="nav-icon">
+                    <i class="darkbtn bx bx-moon"></i>
+                </div>
+            </ul>
+        </nav>
+        <!--Navbar End-->
+    </header>
+    <!--Home Section Start-->
+    <section id="home">
+        <div class="home-carousel owl-carousel owl-theme">
+            <div class="slide slide1">
+                <div class="content">
+                    <p class="sub-heading">COOKIT</p>
+                    <h1 class="heading">Best Quality</h1>
+                    <p class="sub-heading-2">FOOD</p>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="content">
+                    <p class="sub-heading">COOKIT</p>
+                    <h1 class="heading">Cooking Since</h1>
+                    <p class="sub-heading-2">2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home Section End-->
+    <!--About Section Start-->
+    <section id="about" class="flex-row">
+        <div class="review-form" data-aos="fade-right" data-aos-duration="1000">
+            <span>Provide</span>
+            <h2>YOUR REVIEW</h2>
+            <review action="#">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="email" placeholder="Email">
+                <input type="text" name="phone" placeholder="Phone">
+                <input type="text" name="feedback" placeholder="Feedback">
+                <textarea name="msg" id="msg">Message</textarea>
+                <a href="#" type="submit" class="btn1">Provide Your FeedBack</a>
+            </review>
+        </div>
+        <div class="text-wrapper" data-aos="fade-left" data-aos-duration="1000">
+            <h1>ABOUT US</h1>
+            <h3>Our Moto</h3>
+            <p>At CookIt<br>We Believe That Healthy Eating Should Be Easy, Accessible, And Delicious. Our Mission Is To Transform Your Favorite Junk Food Into Nutritious, Vegan Alternatives, Bringing The Joy Of Cooking Right To Your Kitchen. With Our Step-By-Step
+                Guides And Fresh Ingredient Delivery, You Can Create Mouth-Watering Dishes That Nourish Your Body And Satisfy Your Cravings. Let Us Make Cooking Fun And Healthy Together!</p>
+        </div>
+        <div class="img-wrapper" data-aos="fade-left" data-aos-duration="1000">
+            <img src="i/file-removebg-preview.png" alt="#">
+
+        </div>
+    </section>
+
+    <!--About Section End-->
+    <!--Quote Section Start-->
+    <section id="quote">
+        <div class="text-wrapper">
+            <h2>Now Serving</h2>
+            <h1>Happy Hours</h1>
+        </div>
+    </section>
+    <!--Quote Section End-->
+    <!--Menu Section Start-->
+    <section id="menu" class="menu-section">
+        <div class="section-heading">
+            <h3>Special Selections</h3>
+            <h1>From Our Menu</h1>
+            <div class="square-wrapper flex-row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+        <!--Menu Nav-->
+        <div class="menu-tabs flex-row" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
+            <div class="menu-tab-item active" data-target="#breakfast">
+                <i class="bx bxs-bowl-hot"></i>
+                <span>Breakfast</span>
+            </div>
+            <div class="menu-tab-item" data-target="#lunch">
+                <i class="bx bxs-leaf"></i>
+                <span>Lunch</span>
+            </div>
+            <div class="menu-tab-item" data-target="#dinner">
+                <i class="bx bx-restaurant"></i>
+                <span>Dinner</span>
+            </div>
+            <div class="menu-tab-item" data-target="#snacks">
+                <i class="bx bxs-cookie"></i>
+                <span>Snacks</span>
+            </div>
+            <div class="menu-tab-item" data-target="#desserts">
+                <i class="bx bxs-popsicle"></i>
+                <span>Desserts</span>
+            </div>
+            <div class="menu-tab-item" data-target="#drinks">
+                <i class="bx bx-drink"></i>
+                <span>Drinks</span>
+            </div>
+        </div>
+        <!--Breakfast-->
+        <div id="breakfast" class="menu-tab-content show" data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-bottom">
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/avocado toast (1).jpg" alt="acocado toast">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Avocado Toast</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Creamy avocado spread on toasted whole grain.</p>
+                            <p>COOKING TIME: 5 mins</p>
+                            <button onclick="window.location.href='avocado_toast.html'">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/vegan pancakes.jpg" alt="Vegan Pancakes">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Vegan Pancakes</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Fluffy and delicious, made with whole grains.</p>
+                            <p>COOKING TIME: 10 mins</p>
+                            <button onclick="window.location.href='vegan_pancakes.html'">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/smoothie bowl.jpg" alt="smoothie bowl">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Smoothie Bowl</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Blended to perfection, topped with fresh fruits.</p>
+                            <p>COOKING TIME: 5 mins</p>
+                            <button onclick="window.location.href='smoothie_bowl.html'">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/tofu scramble.jpg" alt="tofu scramble">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Tofu Scramble</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Savory tofu mixed with vibrant veggies</p>
+                            <p>COOKING TIME: 10 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/vegan french toast.jpg" alt="Vegan french toast">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Vegan French Toast</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Sweet and satisfying, just like the classic.</p>
+                            <p>COOKING TIME: 10 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/oatmeal with fruits.jpg" alt="oatmeal with fruits">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Oatmeal with Fruits</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Warm, hearty oats, loaded with seasonal fruits.</p>
+                            <p>COOKING TIME: 13 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+        </div>
+        <!--Lunch-->
+        <div id="lunch" class="menu-tab-content">
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/chickpea salad.jpg" alt="chickpea salad">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Chickpea Salad</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Nutritious chickpeas tossed in zesty dressing.</p>
+                            <p>COOKING TIME: 20 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/vegan buddha bowl.jpg" alt="vegan buddha bowl">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Vegan Buddha Bowl</h2>
+                        </div>
+                        <div class="desc">
+                            <p>A vibrant mix of grains, veggies, and protein.</p>
+                            <p>COOKING TIME: 35 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/lentil soup.jpg" alt="lentil soup">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Lentil Soup</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Hearty and wholesome, perfect for any day.</p>
+                            <p>COOKING TIME: 55 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/quinoa salad.jpg" alt="quinoa salad">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Quinoa Salad</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Protein-packed quinoa with fresh greens.</p>
+                            <p>COOKING TIME: 40 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/veggie wraps.jpg" alt="veggie wraps">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Veggie Wraps</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Crunchy vegetables wrapped in a soft tortilla.</p>
+                            <p>COOKING TIME: 15 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/grilled vegetable sandwich.jpg" alt="grilled vegetable sandwich">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Grilled Vegetable Sandwich</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Smoky grilled veggies stacked on crusty bread.</p>
+                            <p>COOKING TIME: 50 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Menu Item End-->
+        </div>
+        <!--Dinner-->
+        <div id="dinner" class="menu-tab-content">
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/vegan stir fry.jpg" alt="vegan stir fry">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Vegan Stir Fry</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Quick-cooked veggies in a savory sauce.</p>
+                            <p>COOKING TIME: 30 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/spaghetti with vegan meatballs.jpg" alt="spaghetti">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Spaghetti with Vegan Meatballs</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Classic pasta topped with flavorful meatballs.</p>
+                            <p>COOKING TIME: 40 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/stuffed bell peppers.jpg" alt="stuffed bell peppers">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Stuffed Bell Peppers</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Peppers filled with a savory grain and veggie mix.</p>
+                            <p>COOKING TIME: 1hr 15mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/vegan shepherds pie.jpg" alt="vegan shepherds pie">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Vegan Shepherd's Pie</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Comfort food with lentils and creamy mash.</p>
+                            <p>COOKING TIME: 1 hr</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/cauliflower tacos.jpg" alt="cauliflower tacos">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Cauliflower Tacos</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Spiced cauliflower wrapped in soft tortillas.</p>
+                            <p>COOKING TIME: 40 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/eggplant lasagna.jpg" alt="eggplant lasagna">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Eggplant Lasagna</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Layers of eggplant and rich tomato sauce.</p>
+                            <p>COOKING TIME: 1hr 30 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+        </div>
+        <!--Snacks-->
+        <div id="snacks" class="menu-tab-content">
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/roasted chickpeas.jpg" alt="roasted chickpeas">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Roasted chickpeas</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Crunchy, seasoned bites for a healthy snack.</p>
+                            <p>COOKING TIME: 25 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/vegan energy balls.jpg" alt="vegan energy balls">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Vegan Energy Balls</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Nutritious and energizing, perfect on-the-go.</p>
+                            <p>COOKING TIME: 15 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/baked sweet potato fries.jpg" alt="baked sweet potato fries">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Baked Sweet Potato Fries</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Crispy and sweet, a healthier fry option.</p>
+                            <p>COOKING TIME: 30 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/hummus and veggies.jpg" alt="hummus and veggies">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Hummus and Veggies</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Creamy hummus served with fresh veggies.</p>
+                            <p>COOKING TIME: 10 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/vegan nachos.jpg" alt="vegan nachos">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Vegan Nachos</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Crispy chips topped with savory toppings.</p>
+                            <p>COOKING TIME: 30 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/popcorn with nutritional yeast.jpg" alt="popcorn">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Popcorn with Nutritional Yeast</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Savory popcorn seasoned for a cheesy flavor.</p>
+                            <p>COOKING TIME: 10 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+        </div>
+        <!--Desserts-->
+        <div id="desserts" class="menu-tab-content">
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/vegan chocolate cake.jpg" alt="vegan chocolate cake">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Vegan Chocoalte Cake</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Decadent and rich, a true chocolate delight.</p>
+                            <p>COOKING TIME: 55 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/diary-free icecream.jpg" alt="diary free icrecream">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Diary-Free Ice Cream</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Creamy and refreshing, guilt-free indulgence.</p>
+                            <p>COOKING TIME: 20 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/coconut macaroons.jpg" alt="coconut macaroons">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Coconut Macaroons</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Sweet and chewy coconut treats.</p>
+                            <p>COOKING TIME: 45 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/vegan brownies.jpg" alt="vegan brownies">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Vegan Brownies</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Fudgy brownies, decadent and satisfying.</p>
+                            <p>COOKING TIME: 55 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/chia seed pudding.jpg" alt="chia seed pudding">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Chia Seed Pudding</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Nutritious and creamy with a hint of sweetness.</p>
+                            <p>COOKING TIME: 1hr 10 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/vegan cookies.jpg" alt="vegan cookies">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Vegan cookies</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Classic cookies, soft and deliciously chewy.</p>
+                            <p>COOKING TIME: 30 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+        </div>
+        <!--Drinks-->
+        <div id="drinks" class="menu-tab-content">
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/green smoothie.jpg" alt="green smoothie">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Green Smoothie</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Refreshing blend of greens and fruits.</p>
+                            <p>COOKING TIME: 5 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/almond milk latte.jpg" alt="almond milk latte">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Almond Milk Latte</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Creamy and frothy, a nutty delight.</p>
+                            <p>COOKING TIME: 6 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/vegan hot chocolate.jpg" alt="vegan hot chocolate">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Vegan Hot chocolate</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Rich and chocolaty, a cozy treat.</p>
+                            <p>COOKING TIME: 18 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/fresh lemonade.jpg" alt="fresh lemonade">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Fresh Lemonade </h2>
+                        </div>
+                        <div class="desc">
+                            <p>Zesty and refreshing, a classic favorite.</p>
+                            <p>COOKING TIME: 15 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/matcha latte.jpg" alt="matcha latte">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Matcha Latte</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Smooth matcha blended with creamy milk.</p>
+                            <p>COOKING TIME: 5 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                    <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                                </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+
+            <!--Menu Item Start-->
+            <div class="menu-item">
+                <div class="menu-item-inner">
+                    <div class="food-img">
+                        <img src="pics/coconut water smoothie.jpg" alt="coconut water smoothie">
+                    </div>
+                    <div class="text">
+                        <div class="dish-details">
+                            <h2>Coconut Water Smoothie</h2>
+                        </div>
+                        <div class="desc">
+                            <p>Hydrating and tropical, pure bliss.</p>
+                            <p>COOKING TIME: 5 mins</p>
+                            <button onclick="window.location.href=''">Recipe</button>
+                            </a>
+                            <button>Add To Cart</button>
+                            <button class="favorite-btn" class="favoriteButton">
+                                <i class="far fa-heart"></i> <!-- Unfilled heart icon -->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Menu Item End-->
+        </div>
+        <div class="btn-wrapper">
+            <a href="#" class="btn2">View Full Recipe</a>
+        </div>
+    </section>
+    <!--Menu Section End-->
+    <!--Gallery Section Start-->
+    <section id="gallery">
+        <div class="section-heading">
+            <h3>Our Gallery</h3>
+            <h1>Our Untold Stories</h1>
+            <div class="square-wrapper flex-row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+        <div class="gallery-wrapper flex-row" data-aos="fade-right" data-aos-duration="1000">
+            <!--Gallery Img Start-->
+            <a class="gallery-img" href="gallery/1.jpg">
+                <img src="gallery/1.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!--Gallery Img End-->
+
+            <!--Gallery Img Start-->
+            <a class="gallery-img" href="gallery/2.jpg">
+                <img src="gallery/2.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!--Gallery Img End-->
+
+            <!--Gallery Img Start-->
+            <a class="gallery-img" href="gallery/3.jpg">
+                <img src="gallery/3.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!--Gallery Img End-->
+
+            <!--Gallery Img Start-->
+            <a class="gallery-img" href="gallery/4.jpg">
+                <img src="gallery/4.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!--Gallery Img End-->
+
+            <!--Gallery Img Start-->
+            <a class="gallery-img" href="gallery/5.jpg">
+                <img src="gallery/5.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!--Gallery Img End-->
+
+
+            <!--Gallery Img Start-->
+            <a class="gallery-img" href="gallery/6.jpg">
+                <img src="gallery/6.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!--Gallery Img End-->
+
+
+            <!--Gallery Img Start-->
+            <a class="gallery-img" href="gallery/7.jpg">
+                <img src="gallery/7.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!--Gallery Img End-->
+
+
+            <!--Gallery Img Start-->
+            <a class="gallery-img" href="gallery/8.jpg">
+                <img src="gallery/8.jpg" alt="#">
+                <div class="overlay">
+                    <i class="icon bx bx-search"></i>
+                </div>
+            </a>
+            <!--Gallery Img End-->
+
+
+
+        </div>
+    </section>
+    <!--Gallery Section End-->
+    <!--Reviews Section-->
+    <!--Reviews Section End-->
+    <!--Blog Section-->
+    <section id="blogs">
+        <div class="section-heading">
+            <h3>Our Recipe</h3>
+            <h1>Chef's Recommended</h1>
+            <div class="square-wrapper flex-row">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+        <div class="blog-carousel owl-carousel owl-theme" data-aos="fade-right" data-aos-duration="1000">
+            <!--Blog Post Start-->
+            <a href="#" class="blog-post">
+                <div class="img-wrapper">
+                    <img src="Images/Burger beet.jpg" alt="#">
+                    <div class="overlay"><i class="icon bx bx-link"></i></div>
+                </div>
+                <div class="text-wrapper">
+                    <h5 class="blog-title">Beet Burger</h5>
+                    <p class="desc">Beet Burgers Can Be Made By Baking, Pan-Frying Or Grilling. Each Burger Is Packed With 20 Grams Of Protein And 18 Grams Of Fibre</p>
+                    <p class="time"><i class="icon bx bx-time-five"></i>Time: <span>20 Minutes</span></p>
+                </div>
+            </a>
+            <!--Blog Post End-->
+
+            <!--Blog Post Start-->
+            <a href="#" class="blog-post">
+                <div class="img-wrapper">
+                    <img src="Images/chickpea-quinoa-salad.jpg" alt="#">
+                    <div class="overlay"><i class="icon bx bx-link"></i></div>
+                </div>
+                <div class="text-wrapper">
+                    <h5 class="blog-title">Chickpea Quinoa Salad</h5>
+                    <p class="desc">Quinoa Chickpea Salad Is Made With An Abundance Of Herbs, Colorful Vegetables, Beans, And Quinoa, It Is A Wholesome Dish</p>
+                    <p class="time"><i class="icon bx bx-time-five"></i>Time: <span>20 Minutes</span></p>
+                </div>
+            </a>
+            <!--Blog Post End-->
+
+            <!--Blog Post Start-->
+            <a href="#" class="blog-post">
+                <div class="img-wrapper">
+                    <img src="Images/pasta primavera.jpg" alt="#">
+                    <div class="overlay"><i class="icon bx bx-link"></i></div>
+                </div>
+                <div class="text-wrapper">
+                    <h5 class="blog-title">Pasta Primavera</h5>
+                    <p class="desc">Pasta Primavera Recipe Is Light, Fresh, And Simple To Make. Packed With Colorful Veggies, It is The Perfect Easy Dinner For Spring Or Summer Night.</p>
+                    <p class="time"><i class="icon bx bx-time-five"></i>Time: <span>30 Minutes</span></p>
+                </div>
+            </a>
+            <!--Blog Post End-->
+        </div>
+    </section>
+    <!--Blog Section Ends-->
+    <!--Footer Quote Start-->
+    <section class="footer-quote flex-col">
+        <h1> Make Delicious And Nutritious Food</h1>
+        <a href="#" class="btn3">CookIt Now</a>
+    </section>
+    <!--Footer Quote End-->
+    <!--Footer Start-->
+    <footer id="footer">
+        <div class="footer-top flex-row">
+            <div class="flex-col">
+                <h4 class="logo-name">COOKIT</h4>
+                <ul class="social-links">
+                    <li><a href="#"><i class="icon bx bxl-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon bx bxl-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon bx bxl-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="flex-col">
+                <h4 class="heading">ADDRESS</h4>
+                <p class="desc">58 Ralph Ave<br>Malad, Mumbai 400608</p>
+                <p class="desc">P: +91 4573872109<br>E: cookit@gmail.com</p>
+            </div>
+            <div class="flex-col">
+                <h4 class="heading">OPEN HOURS</h4>
+                <ul class="timings flex-col">
+                    <li>
+                        <p class="days">MONDAY</p>
+                        <div class="time">9:00 - 21:00</div>
+                    </li>
+                    <li>
+                        <p class="days">TUESDAY</p>
+                        <div class="time">9:00 - 21:00</div>
+                    </li>
+                    <li>
+                        <p class="days">WEDNESDAY</p>
+                        <div class="time">9:00 - 21:00</div>
+                    </li>
+                    <li>
+                        <p class="days">THURSHDAY</p>
+                        <div class="time">9:00 - 21:00</div>
+                    </li>
+                    <li>
+                        <p class="days">FRIDAY</p>
+                        <div class="time">9:00 - 21:00</div>
+                    </li>
+                    <li>
+                        <p class="days">SATURDAY</p>
+                        <div class="time">10:00 - 23:00</div>
+                    </li>
+                    <li>
+                        <p class="days">SUNDAY</p>
+                        <div class="time">10:00 - 23:00</div>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-col">
+                <h4 class="heading">MORE INFO</h4>
+                <a href="#menu">MENU</a>
+                <a href="#about">ABOUT</a>
+                <a href="#blogs">BLOGS</a>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+    <!--JQuery Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--Owl Carousel Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!--AOS Script-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!--Light Gallery Script-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+    <!--Local JS Script-->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
